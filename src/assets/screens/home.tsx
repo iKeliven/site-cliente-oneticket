@@ -33,7 +33,6 @@ const Home: FunctionComponent = () => {
                     shows="Shows"
                     propAlignSelf="unset"
                     propBackgroundImage="url('/show.png')"
-                    propAlignSelf1="unset"
                   />
                   <Divpb
                     divvImageImage="/teatro.png"
