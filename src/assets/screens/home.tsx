@@ -1,12 +1,13 @@
 import { FunctionComponent } from "react";
-import Divpb from "../components/Divpb";
-import Divpb1 from "../components/Divpb1";
+//import Divpb from "../components/Divpb";
+//import Divpb1 from "../components/Divpb1";
 import Footer1 from "../components/Footer1";
 import Header from "../components/Header";
 import InputField from "../components/InputField";
 import Linkmargin from "../components/Linkmargin";
 import Linkmargin1 from "../components/Linkmargin1";
 import Linkmargin2 from "../components/Linkmargin2";
+import { Categories } from "../components/Categories";
 
   
 const Home: FunctionComponent = () => {
@@ -21,126 +22,7 @@ const Home: FunctionComponent = () => {
           </div>
           <div className="w-[1312px] flex flex-row items-start justify-start py-0 pr-3 pl-0 box-border max-w-full shrink-0 mq1650:max-w-[calc(100%_-_12px)]">
             <div className="flex-1 flex flex-col items-center justify-start gap-[26px_0px] max-w-full">
-              <div className="w-full flex flex-col items-start justify-start max-w-[1300px] mq1300:max-w-full">
-                <div className="self-stretch flex flex-row flex-wrap items-center justify-start py-8 px-6">
-                  <b className="relative leading-[48px] mq450:text-lg mq450:leading-[29px] mq900:text-5xl mq900:leading-[38px]">
-                    Categorias
-                  </b>
-                </div>
-                <div className="self-stretch flex flex-row flex-wrap items-start justify-center py-0 pr-[22px] pl-0 text-[15.6px] text-dimgray">
-                  <Divpb1
-                    divvImageImage="/show.png"
-                    shows="Shows"
-                    propAlignSelf="unset"
-                    propBackgroundImage="url('/show.png')"
-                  />
-                  <Divpb
-                    divvImageImage="/teatro.png"
-                    teatros="Teatros"
-                    propAlignSelf="unset"
-                    propBackgroundImage="url('/teatro.png')"
-                    propAlignSelf1="unset"
-                  />
-                  <div className="flex-1 flex flex-col items-center justify-start pt-0 px-0 pb-10 box-border gap-[12px_0px] min-w-[65px] max-w-[1300px] ml-[-2.57px] mq1300:max-w-full">
-                    <div className="self-stretch flex flex-row flex-wrap items-center justify-center py-0 px-6">
-                      <div className="h-20 w-20 rounded-61xl bg-whitesmoke flex flex-row items-center justify-center py-5 px-0 box-border">
-                        <div className="flex-1 overflow-hidden flex flex-row items-center justify-end bg-[url('/public/infantil.png')] bg-cover bg-no-repeat bg-[top] max-w-[80px]">
-                          <img
-                            className="self-stretch w-20 relative max-h-full object-cover hidden min-h-[40px]"
-                            alt=""
-                            src="/infantil.png"
-                          />
-                          <div className="h-20 w-20 relative hidden" />
-                          <div className="flex flex-col items-start justify-start py-0 px-0">
-                            <div className="w-px h-10 relative">
-                              <div className="absolute h-full w-[calc(100%_+_79px)] top-[0px] right-[0.7px] bottom-[0px] left-[-79.7px]" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="self-stretch flex flex-row flex-wrap items-center justify-center py-0 px-6">
-                      <div className="relative leading-[24px]">Infantil</div>
-                    </div>
-                  </div>
-                  <Divpb
-                    divvImageImage="/balada.png"
-                    teatros="Baladas"
-                    propAlignSelf="unset"
-                    propBackgroundImage="url('/balada.png')"
-                    propAlignSelf1="unset"
-                  />
-                  <div className="flex-1 flex flex-col items-center justify-start pt-0 px-0 pb-4 box-border gap-[12px_0px] min-w-[65px] max-w-[1300px] ml-[-2.57px] text-mini mq1300:max-w-full">
-                    <div className="self-stretch flex flex-row flex-wrap items-center justify-center py-0 px-6">
-                      <div className="h-20 w-20 rounded-61xl bg-whitesmoke flex flex-row items-center justify-center py-5 px-0 box-border">
-                        <div className="flex-1 overflow-hidden flex flex-row items-center justify-end bg-[url('/public/curso.png')] bg-cover bg-no-repeat bg-[top] max-w-[80px]">
-                          <img
-                            className="self-stretch w-20 relative max-h-full object-cover hidden min-h-[40px]"
-                            alt=""
-                            src="/curso.png"
-                          />
-                          <div className="h-20 w-20 relative hidden" />
-                          <div className="flex flex-col items-start justify-start py-0 px-0">
-                            <div className="w-px h-10 relative">
-                              <div className="absolute h-full w-[calc(100%_+_79px)] top-[0px] right-[0.7px] bottom-[0px] left-[-79.7px]" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex flex-row flex-wrap items-center justify-center py-0 px-6">
-                      <div className="flex flex-col items-center justify-start pt-0 px-0 pb-px">
-                        <div className="flex flex-row items-start justify-start py-0 pr-[22px] pl-[25px]">
-                          <div className="relative leading-[24px]">
-                            Cursos e
-                          </div>
-                        </div>
-                        <div className="h-[23px] flex flex-row items-start justify-start py-0 pr-[17px] pl-4 box-border text-base-4">
-                          <div className="mt-[-1px] relative leading-[24px]">
-                            Workshops
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <Divpb1
-                    divvImageImage="/congressso.png"
-                    shows="Congressos"
-                    propMarginLeft="-2.57px"
-                    propAlignSelf="stretch"
-                    propBackgroundImage="url('/congresso.png')"
-                  />
-                  <div className="flex-1 flex flex-col items-center justify-start pt-0 px-0 pb-10 box-border gap-[12px_0px] min-w-[65px] max-w-[1300px] ml-[-2.57px] text-base-1 mq1300:max-w-full">
-                    <div className="self-stretch flex flex-row flex-wrap items-center justify-center py-0 px-6">
-                      <div className="h-20 w-20 rounded-61xl bg-whitesmoke flex flex-row items-center justify-center py-5 px-0 box-border">
-                        <div className="flex-1 overflow-hidden flex flex-row items-center justify-end bg-[url('/public/esporte.png')] bg-cover bg-no-repeat bg-[top] max-w-[80px]">
-                          <img
-                            className="self-stretch w-20 relative max-h-full object-cover hidden min-h-[40px]"
-                            alt=""
-                            src="/esporte.png"
-                          />
-                          <div className="h-20 w-20 relative hidden" />
-                          <div className="flex flex-col items-start justify-start py-0 px-0">
-                            <div className="w-px h-10 relative">
-                              <div className="absolute h-full w-[calc(100%_+_79px)] top-[0px] right-[0.7px] bottom-[0px] left-[-79.7px]" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex flex-row flex-wrap items-center justify-center py-0 pr-[42px] pl-[43px]">
-                      <div className="relative leading-[24px]">Esportivos</div>
-                    </div>
-                  </div>
-                  <Divpb1
-                    divvImageImage="/museu.png"
-                    shows="Exposições"
-                    propMarginLeft="-2.57px"
-                    propAlignSelf="unset"
-                    propBackgroundImage="url('/museu.png')"
-                  />
-                </div>
-              </div>
+              <Categories />
               <div className="self-stretch flex flex-col items-start justify-start py-0 px-2.5 box-border max-w-full text-[30.3px]">
                 <div className="w-full h-[1188px] flex flex-col items-start justify-start pt-9 pb-[42px] pr-3 pl-0 box-border gap-[24px_0px] max-w-[1280px] mq900:pt-5 mq900:pb-5 mq900:box-border mq1300:pt-[23px] mq1300:pb-[27px] mq1300:box-border mq1300:max-w-full">
                   <div className="flex flex-row items-start justify-start py-0 px-2">
