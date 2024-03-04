@@ -2,36 +2,40 @@ import { FunctionComponent } from "react";
 
 export type Linkmargin1Type = {
   camaroteViproomCarnaval?: string;
+  imageSrc?: string;
+  title?: string;
+  date?: string;
+  location?: string;
 };
 
 const Linkmargin1: FunctionComponent<Linkmargin1Type> = ({
-  camaroteViproomCarnaval,
+  imageSrc = "/divvimage--image@2x.png",
+  title = "The Dream Island - Carnival",
+  date = "10 a 13 de Fevereiro",
+  location = "Locais Diversos • Florianópolis, SC",
 }) => {
   return (
-    <div className="h-full w-[317px] shrink-0 flex flex-row items-start justify-center pt-0 px-0 pb-4 box-border max-w-[317px] min-h-[326px] max-h-[326px] ml-[-4px] text-left text-mid-3 text-darkslategray font-www-blueticket-com-br-1680x783-default-inter-medium-1356">
-      <div className="h-full w-[285px] rounded-lg bg-white shadow-[0px_2px_8px_rgba(25,_43,_70,_0.08)] flex flex-col items-start justify-start max-w-[285px] min-h-[310px] max-h-[310px]">
-        <div className="w-full h-[49px] rounded-t-lg rounded-b-none overflow-hidden flex flex-row items-center justify-center relative max-w-[285px] max-h-[165px]">
-          <div className="h-full w-full absolute my-0 mx-[!important] top-[0px] right-[0px] bottom-[0px] left-[0px] [filter:blur(2px)]" />
-          <div className="self-stretch flex-1 relative max-w-[285px] z-[1]" />
+    <div className="h-326 flex items-start justify-center pt-0 pb-4 max-w-317 min-h-326 max-h-326">
+      <div className="w-285 rounded-lg bg-white shadow-md flex flex-col justify-between max-w-285 min-h-310 max-h-310">
+        <div className="h-135 relative rounded-t-lg overflow-hidden bg-cover bg-no-repeat bg-top max-w-285 max-h-165">
+          <img className="absolute inset-0 w-full h-full object-cover" alt="" src={imageSrc} />
+          <div className="absolute inset-0" />
+          <div className="absolute w-full top-0 right-0 left-full h-165 hidden">
+            <div className="absolute inset-0 w-full top-0 right-full bottom-0 left-negative-285px hidden" />
+          </div>
         </div>
-        <div className="self-stretch rounded-t-none rounded-b-lg flex flex-col items-start justify-between">
-          <div className="flex flex-col items-start justify-start py-4 pr-[30px] pl-3">
-            <div className="relative leading-[21px] font-medium inline-block max-w-[261px]">
-              <p className="m-0">{camaroteViproomCarnaval}</p>
-              <p className="m-0">Floripa 2024</p>
+        <div className="flex-1 rounded-t-none rounded-b-lg flex flex-col justify-between">
+          <div className="flex flex-col justify-start py-4 pr-3.5 pl-3">
+            <div className="relative font-medium inline-block max-w-261">
+              <p className="m-0">{title}</p>
             </div>
           </div>
-          <div className="self-stretch flex flex-col items-start justify-end pt-[79px] px-3 pb-12 text-sm-2 text-black">
+          <div className="flex-1 flex flex-col justify-end py-13 pr-5 pl-3 text-sm text-black">
             <div className="flex flex-col items-start justify-start">
-              <div className="relative tracking-[0.1px] leading-[20px] whitespace-nowrap">
-                Sáb, 10 de Fevereiro • Abertura: 21:00
-              </div>
+              <div className="relative tracking-[0.1px] leading-20">{date}</div>
             </div>
-            <div className="self-stretch flex flex-col items-start justify-start py-0 pr-[11px] pl-0 text-sm-3 text-dimgray">
-              <div className="relative tracking-[0.1px] leading-[20px]">
-                <p className="m-0">Passarela Nego Quirido • Florianópolis,</p>
-                <p className="m-0">SC</p>
-              </div>
+            <div className="flex flex-col items-start justify-start text-sm-3 text-dimgray">
+              <div className="relative tracking-[0.1px] leading-20">{location}</div>
             </div>
           </div>
         </div>

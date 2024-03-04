@@ -59,33 +59,6 @@ const Header: FunctionComponent = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col items-start justify-start pt-0.5 pb-0 pr-px pl-0 text-center text-sm text-white">
-                <div className="flex flex-row items-center justify-start py-0 pr-[3px] pl-0">
-                  <div className="flex flex-col items-start justify-start pt-1 px-0 pb-0 text-left">
-                    <div className="flex flex-row items-center justify-start pt-0 pb-1 pr-[0.01000213623046875px] pl-[1.25px]">
-                      <div className="relative leading-[21px] font-medium whitespace-nowrap">{`Florianópolis, SC `}</div>
-                      <div className="h-7 w-7 rounded-sm flex flex-row items-center justify-center p-0.5 box-border ml-[-0.13px]">
-                        <div className="flex flex-col items-start justify-start">
-                          <img
-                            className="w-6 h-6 relative overflow-hidden shrink-0"
-                            alt=""
-                            src="/icon-3.svg"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="rounded flex flex-row items-center justify-center pt-[9px] pb-2.5 pr-4 pl-[17px] box-border min-w-[64px] ml-[-1px] text-sm-8">
-                    <div className="relative font-medium">Ajuda</div>
-                  </div>
-                  <div className="h-[29px] flex flex-col items-start justify-start pt-0 px-1 pb-0.5 box-border ml-[-1px]">
-                    <div className="w-px h-[29px] relative bg-white box-border min-h-[29px] max-h-[29px] border-r-[1px] border-solid border-gray-400" />
-                  </div>
-                  <div className="rounded flex flex-row items-center justify-center py-2.5 pr-[15px] pl-[17px] box-border min-w-[64px] ml-[-1px] text-sm-6">
-                    <div className="relative font-medium">Entrar</div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
