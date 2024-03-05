@@ -13,7 +13,40 @@ const InputField: FunctionComponent = () => {
               src="/prancheta-2-1@2x.png"
             />
             
-              <BannerItem />
+            <div className="flex-1 overflow-hidden flex flex-row items-center justify-start max-w-[1365px] z-[1] mq1650:max-w-full">
+        <div className="w-[1317px] overflow-hidden shrink-0 flex flex-row items-center justify-center max-w-[1317px] mq1650:max-w-full">
+      <div className="flex-1 flex flex-row items-center justify-center max-w-[1317px] mq1650:max-w-full">
+        <div className="h-[300px] flex-1 flex flex-row flex-wrap items-start justify-start py-0 pr-[64.01004028320312px] pl-16 box-border relative max-w-full">
+        <BannerItem
+          title="Safari Beach Jurerê"
+          location="Safari Beach Jurerê - Florianópolis - SC"
+          buttonText="Ver Detalhes"
+          imageSrc="/public/divvimage--image@2x.png"
+        />
+
+          <div className="h-[30px] w-[30px] my-0 mx-[!important] absolute top-[130.4px] left-[5.4px] rounded-mini bg-white flex flex-row items-center justify-center z-[1]">
+            <div className="h-[30px] w-[30px] relative rounded-mini">
+              <img
+                className="absolute top-[3px] left-[3px] w-6 h-6 overflow-hidden"
+                loading="eager"
+                alt=""
+                src="/icon.svg"
+              />
+            </div>
+          </div>
+          <div className="h-[30px] w-[30px] my-0 mx-[!important] absolute top-[130.4px] left-[1282.4px] rounded-mini bg-white flex flex-row items-center justify-center z-[1]">
+            <div className="h-[30px] w-[30px] relative rounded-mini">
+              <img
+                className="absolute top-[3px] left-[3px] w-6 h-6 overflow-hidden"
+                alt=""
+                src="/icon-1.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
           </div>
         </div>
       </div>
