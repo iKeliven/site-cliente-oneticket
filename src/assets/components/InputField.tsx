@@ -17,13 +17,12 @@ const InputField: FunctionComponent = () => {
         <div className="w-[1317px] overflow-hidden shrink-0 flex flex-row items-center justify-center max-w-[1317px] mq1650:max-w-full">
       <div className="flex-1 flex flex-row items-center justify-center max-w-[1317px] mq1650:max-w-full">
         <div className="h-[300px] flex-1 flex flex-row flex-wrap items-start justify-start py-0 pr-[64.01004028320312px] pl-16 box-border relative max-w-full">
-        <BannerItem
-          title="Safari Beach Jurerê"
-          location="Safari Beach Jurerê - Florianópolis - SC"
-          buttonText="Ver Detalhes"
-          imageSrc="/public/divvimage--image@2x.png"
-        />
-
+          <BannerItem
+            title="Safari Beach Jurerê"
+            location="Safari Beach Jurerê - Florianópolis - SC"
+            buttonText="Ver Detalhes"
+            imageSrc="/divvimage--image@2x.png"
+          />
           <div className="h-[30px] w-[30px] my-0 mx-[!important] absolute top-[130.4px] left-[5.4px] rounded-mini bg-white flex flex-row items-center justify-center z-[1]">
             <div className="h-[30px] w-[30px] relative rounded-mini">
               <img
