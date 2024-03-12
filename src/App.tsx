@@ -1,9 +1,10 @@
-import Home from './assets/screens/home'
+import Home from './assets/screens/Home'
 
 function App() {
 
   return (
     <Home />
+
   )
 }
 

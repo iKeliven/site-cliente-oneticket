@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 
+
 const Footer: FunctionComponent = () => {
   return (
     <footer className="self-stretch bg-black flex flex-row items-center justify-center p-[45px] box-border max-w-full text-left text-base-3 text-white font-www-blueticket-com-br-1680x783-default-inter-medium-1356 mq450:pt-[29px] mq450:pb-[29px] mq450:box-border mq900:pl-[22px] mq900:pr-[22px] mq900:box-border">
@@ -61,22 +62,12 @@ const Footer: FunctionComponent = () => {
                       Para Organizadores
                     </div>
                   </div>
-                  <div className="flex flex-row items-start justify-start pt-0 px-0 pb-[15px]">
-                    <div className="relative leading-[18px]">Shows</div>
-                  </div>
-                  <div className="flex flex-col items-start justify-start pt-0 px-0 pb-3.5 gap-[16px_0px] text-mini-9">
+                  <div className="flex flex-col items-start gap-[15px] justify-start pt-0 px-0 pb-[15px]">
+                    <div className="relative leading-[18px]"><a href="../shows">Shows</a></div>
                     <div className="relative leading-[18px]">Teatros</div>
-                    <div className="relative text-mini leading-[18px]">
-                      Casas Noturnas
-                    </div>
-                  </div>
-                  <div className="flex flex-row items-start justify-start pt-0 px-0 pb-4 text-base-1">
-                    <div className="relative leading-[18px]">
-                      Workshows e Congressos
-                    </div>
-                  </div>
-                  <div className="relative leading-[18px]">
-                    Eventos Esportivos
+                    <div className="relative text-mini leading-[18px]">Casas Noturnas</div>
+                    <div className="relative leading-[18px]">Workshows e Congressos</div>
+                    <div className="relative leading-[18px]">Eventos Esportivos</div>
                   </div>
                 </div>
               </div>

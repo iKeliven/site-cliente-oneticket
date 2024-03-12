@@ -9,7 +9,7 @@ const Header: FunctionComponent = () => {
             className="h-[34px] w-[244px] relative overflow-hidden shrink-0 object-cover"
             loading="eager"
             alt=""
-            src="/logo-blueticket-headersvg@2x.png"
+            src="/logo.png"
           />
           <div className="w-[283px] flex flex-col items-start justify-start py-5 px-0 box-border">
             <div className="w-[162px] overflow-hidden flex flex-row items-center justify-center max-w-[162px] max-h-[56px]">
