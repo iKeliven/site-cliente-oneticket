@@ -13,6 +13,13 @@ module.exports = {
           "400": "rgba(0, 0, 0, 0.12)",
           "500": "rgba(255, 255, 255, 0.24)",
         },
+        darkorange: "#ff9800",
+        chocolate: "#cc6600",
+        whitesmoke: {
+          "100": "#edf0f2",
+          "200": "#e8e9ec",
+        },
+        slategray: "#5e6b7e",
         dimgray: "#626973",
         darkslategray: "#192b46",
         whitesmoke: "#f3f5f6",
