@@ -5,8 +5,12 @@ import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import Footer from "../components/Footer";
 import ProximosEventos from "../components/ProximosEventos";
 import Atalhos from "../components/Atalhos";
-import Feedback from "../components/Feedback";
+import FiltroEvento from "../components/FiltroEvento";
 import Tarefas from "../components/Tarefas";
+import SidebarEvent from "../components/SidebarEvent";
+import ListaEventos from "../components/ListaEventos";
+import FeedbackEvent from "../components/FeedbackEvent";
+import HeaderPages from "../components/HeaderPages";
 
 // Dados de exemplo
 const avaliacoes = {
@@ -86,28 +90,28 @@ const alertas = [
   "Pendência de pagamento para 'Concerto'",
 ];
 
-const Home: FunctionComponent = () => {
+const Eventos: FunctionComponent = () => {
   return (
     <div className="flex flex-col w-[100vw]">
       <HeaderSection />
-      <div className="flex flex-col bg-[#e6e6e6] pt-[120px] gap-5 p-8 flex-grow">
-        <div className="flex gap-10">
-          <DashData icone={<TrendingUpIcon sx={{ fontSize: 40 }} />} titulo={"Eventos Realizados"} dado={"250"} imagem={"Vector125.png"} />
-          <DashData icone={<TrendingUpIcon sx={{ fontSize: 40 }} />} titulo={"Ingressos Vendidos"} dado={"2345"} imagem={"Growth.png"} />
-          <DashData icone={<TrendingUpIcon sx={{ fontSize: 40 }} />} titulo={"Faturamento"} dado={"23245,00"} imagem={"Growth.png"} />
-        </div>
-        <div className="flex gap-8 ">
-          <ProximosEventos />
-          <Atalhos />
-        </div>
-        <div className="flex flex-col gap-8">
-          <Feedback avaliacoes={avaliacoes} comentarios={comentarios} graficosDados={graficosDados} />
+      <div className="flex">
+        <SidebarEvent />
+        <div className="flex w-[75vw] flex-col bg-[#e6e6e6] pt-[120px] gap-5 p-8 flex-grow">
+          <HeaderPages />
+          <div className="flex gap-5">
+            <ListaEventos />
+            <FiltroEvento />
+
+          </div>
+
+          <FeedbackEvent avaliacoes={avaliacoes} comentarios={comentarios} graficosDados={graficosDados} />
           <Tarefas tarefas={tarefas} alertas={alertas} />
         </div>
       </div>
+
       <Footer />
     </div>
   );
 };
 
-export default Home;
+export default Eventos;
